@@ -76,20 +76,27 @@ select {
 
 /* ========================= Base Styles ========================= */
 
+body {
+    font-family: 'Manrope', sans-serif;
+}
+
 h1 {
     font-size: 4.5rem;
     line-height: 1.25;
     text-align: center;
+    font-family: 'Fraunces', serif;
 }
 
 h2 {
     font-size: 3.5rem;
     line-height: 1.25;
+    font-family: 'Fraunces', serif;
 }
 
 h3 {
     font-size: 2rem;
     line-height: 1.25;
+    font-family: 'Fraunces', serif;
 }
 
 p {
@@ -99,6 +106,7 @@ p {
 
 a {
     text-decoration: none;
+    font-family: 'Manrope', sans-serif;
 }
 
 header {
@@ -139,6 +147,7 @@ header {
 
 .nav-apply {
     border-bottom: solid 0.25rem #44FFA1;
+    font-family: 'Manrope', sans-serif;
 }
 
 .nav-apply-anchor {
@@ -169,8 +178,6 @@ header {
     margin: 1rem 0 3rem 0;
 }
 
-
-
 .hero-image {
     grid-column: 2 / -2;
 }
@@ -187,6 +194,38 @@ header {
 /* ========================= Main ========================= */
 .benefits-list {
     background-color: #FCF8FF;
+    color: #24053E;
+    list-style: none;
+    font-family: 'Fraunces', serif;
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+}
+
+.benefit-element {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.benefit-element::before {
+    counter-increment: rando;
+    content: counter(rando);
+    border-radius: 50%;
+    border: solid 1px #584D62;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.benefit-element:first-child {
+    counter-reset: rando;
 }
 
 .founder-avatar {
@@ -210,9 +249,8 @@ header {
     padding: 2rem 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
+    width: 100%;
+    margin: 0;
 }
 
 .logo-wrapper {

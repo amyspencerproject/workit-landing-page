@@ -58,13 +58,18 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - This challenge has curved lines at the bottom of two sections. I attempted to make this effect with SVG but I was soon going down a rabbit hole that would not get me to the finish line of completing this challenge. Went with using border-radius with a much wider width so the edge appears more subltly curved. The edge is certaily not as clean as if I did SVG.
 - Button vs anchor link: Here is a response from FEM discord server from Chamu to another developer doing this same challange
 ![](./btn-vs-anchor-screenshot.png)
-
+- Even though fonts were available in this challenge as files in the assets (ie .ttt) both font-families were available on Google fonts. I haven't used `@font-face ` for ages and probably should review that at some point.
+- I used an ordered list for the benefits which are numbered 1 - 3. The numbers have quite a bit of style applied to them and it was not as simple as using the default numbers that come with `<ol>`. The biggest styling issue was getting rid of the period after the number which is the default setting. I found a partial solution in [Stack Overflow](https://stackoverflow.com/questions/28490537/how-to-remove-dot-from-css-list-styledecimal). This along with using `counter()` got me to a more malleable numbering scheme.
+- I used flex on the list numbers to get them centered horizontally and vertically. Until this centering was applied I could not get the border to be a perfect circle of a resonalbe size.
+- Pseudo-element (double colons `::`)is a keyword added to a selector that lets you style a specific part of the selected element(s). For example, `::before` is the first child of the selected element. It is often used to add cosmetic content to an element with the content property.
+- Pseudo-class (single colon `:`) is a keyword added to a selector that specifies a special state of the selected element(s). For example, `:hover` can be used to select a button when a user's pointer hovers over the button and this selected button can then be styled.
 
 
 ### Useful resources
 
 - [Stack Overflow-Curved Bottom](https://stackoverflow.com/questions/17040709/can-i-create-a-div-with-a-curved-bottom) - This was a good discussion on different ways to get curved bottoms on elements.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [CSS Counter()](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_counter_styles/Using_CSS_counters#list_item_counters) - CSS allows for a good deal of control over counting for lists.
+- [Pseudo-elements](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements) vs [Pseudo-classes](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes)
 
 
 ## Author
@@ -72,5 +77,3 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Website - [Amy Spencer](https://spencerproject.com/)
 - Frontend Mentor - [@amyspencerproject](https://www.frontendmentor.io/profile/amyspencerproject)
 - Linkedin - [amyspencercodes](https://www.linkedin.com/in/amyspencercodes/)
-
-
