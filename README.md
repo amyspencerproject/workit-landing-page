@@ -38,7 +38,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Repo URL: [Add solution URL here](https://your-solution-url.com)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
@@ -47,17 +47,23 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 - Semantic HTML5 markup
 - CSS custom properties
-- Flexbox
 - CSS Grid
 - Mobile-first workflow
 
 
 ### What I learned
+- Having a hard time figuring out how many columns and rows to use for header grid container. There is a difference between having implicit and explicit grid. Pretty sure I would like the former which means using `minmax()` and `repeat()`
+
+- There is a big difference between underlining a word `text-decoration: underline #44FFA1;` and using a border to underline the element that the word resides in `border-bottom: solid 0.25rem #44FFA1;`. Using a border comes closer to the design comp for this challenge. It also looks better with the larger stand out text because the spacing between the word and the line is larger and the thickness of the border can be precisely controlled.
+- This challenge has curved lines at the bottom of two sections. I attempted to make this effect with SVG but I was soon going down a rabbit hole that would not get me to the finish line of completing this challenge. Went with using border-radius with a much wider width so the edge appears more subltly curved. The edge is certaily not as clean as if I did SVG.
+- Button vs anchor link: Here is a response from FEM discord server from Chamu to another developer doing this same challange
+![](./btn-vs-anchor-screenshot.png)
+
 
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+- [Stack Overflow-Curved Bottom](https://stackoverflow.com/questions/17040709/can-i-create-a-div-with-a-curved-bottom) - This was a good discussion on different ways to get curved bottoms on elements.
 - [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
 
 

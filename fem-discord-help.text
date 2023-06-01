@@ -1,0 +1,58 @@
+Response from Grace to someone else for this challenge
+
+From a very quick glance at this 
+1. The logo should be in a `header` element not main
+2. I assume 'apply for access' would be an interactive element, not just a paragraph
+3. None of this should be in an `article`
+4. "Learn more" would _navigate_ somewhere so must be an anchor not button. They have different purposes
+5. I don't think "mobile phone" is descriptive alt text for that image. If it's meaningful content that description should be able to let me picture that image in my head without seeing it. If it's decorative, then no content is required and alt can be blank (also I don't think there is a reason to wrap the image in a div, unless you will need that for some reason for the styling?)
+6. There's no need for a div around the unordered list of benefits 
+7. The list is visibly numbered so should be using an _ordered_ list
+8. The 1, 2, 3 numbers are fine to keep in the html if you want but should be aria-hidden (because you're going to change this to an ordered list anyway)
+9. Because you'll have to remove list-styling in CSS (and some user agents are stupid - they will remove the list semantics from the accessibility api!) you will need to restore list semantics in the HTML. That means add `role="list` to the `ol` and `role="listitem"` to each `li`
+10. The benefits headings can't be h3s unless you are going to add in a visually hidden `h2` above them to title that list. Headings must always go in order
+11. Too many divs (and I don't think they will help the layout you want) around the avatar image. Keep the HTML as simple as possible at this stage! Only add what you need semantically for now, you can add extra meaningless layout elements like divs and spans IF you need them when you do the styling
+12. "Be the first to test" must be a h2. Headings in order
+13. And again, apply for access is an anchor not a button
+14. `footer` is a landmark element so must be _outside_ of main
+15. Social icons would be clickable & navigate so must have anchors around them
+
+
+
+<!-- <svg width="500" height="80" viewBox="0 0 500 80" preserveAspectRatio="none">
+      <defs>
+        <clipPath id="shape">
+          <path d="M0,0 L0,40 Q250,80 500,40 L500,0 Z" />
+        </clipPath>
+      </defs>
+      <rect x="0" y="0" width="500" height="80" fill="#ffff" clip-path="url(#shape)" />
+    </svg> -->
+
+
+     <!-- <svg width="500" height="80" viewBox="0 0 500 80" preserveAspectRatio="none">
+    <path d="M 0,0
+         L 0,40
+         Q 250,80 500,40
+         L 500,0
+         Z" fill="#24053E" />
+  </svg> -->
+
+  /* svg {
+    width: 100%;
+    grid-column: 1 / -1;
+} */
+
+/* header::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+transform: translate(-50%, -50%);
+bottom: -6rem;
+width: 150%;
+height: 4rem;
+border-radius: 50% / 0 0 100% 100%;
+background-color: #24053E;
+margin-bottom: 5rem;
+} */
