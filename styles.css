@@ -81,25 +81,26 @@ body {
 }
 
 h1 {
-    font-size: 4.5rem;
+    font-size: 2.25rem;
     line-height: 1.25;
     text-align: center;
     font-family: 'Fraunces', serif;
 }
 
 h2 {
-    font-size: 3.5rem;
+    font-size: 1.5rem;
     line-height: 1.25;
     font-family: 'Fraunces', serif;
 }
 
 h3 {
-    font-size: 2rem;
+    font-size: 1.25rem;
     line-height: 1.25;
     font-family: 'Fraunces', serif;
 }
 
 p {
+    font-family: 'Manrope', sans-serif;
     font-size: 1.25;
     line-height: 1.75;
 }
@@ -112,6 +113,7 @@ a {
 header {
     background-color: #24053E;
     color: #FFFFFF;
+
 }
 
 .primary-cta {
@@ -124,6 +126,57 @@ header {
     background-color: #24053E;
     color: #44FFA1;
     border: solid 0.25rem #44FFA1;
+}
+
+.curve-dark {
+    color: white;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    padding: 3rem 2rem;
+    width: 100%;
+    z-index: 2;
+    border: 1px solid red;
+
+    &::before {
+        content: '';
+        display: block;
+        background: #24053E;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        border-radius: 150vw;
+        /* width: 150%; */
+        width: 300vw;
+        height: 300vw;
+        z-index: -1;
+    }
+}
+
+.curve-light {
+    color: #24053E;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    padding: 3rem 2rem;
+    width: 100%;
+    z-index: 2;
+    border: 1px solid red;
+
+    &::before {
+        content: '';
+        display: block;
+        background: #FCF8FF;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        border-radius: 150vw;
+        width: 300vw;
+        height: 300vw;
+        z-index: -1;
+    }
 }
 
 /* ========================= Header & Nav ========================= */
@@ -178,8 +231,33 @@ header {
     margin: 1rem 0 3rem 0;
 }
 
+.hero-section {
+    background-color: #FCF8FF;
+    color: #FFFFFF;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(auto, minmax(150px, 1fr));
+    position: relative;
+    z-index: -1;
+}
+
+.curve-grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-column: 1/ -1;
+    justify-self: center;
+}
+
+
+
 .hero-image {
     grid-column: 2 / -2;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    bottom: -60%;
+    z-index: 3;
 }
 
 
@@ -203,6 +281,12 @@ header {
     flex-flow: column wrap;
 }
 
+
+
+.benfits-wrapper {
+    background-color: black;
+}
+
 .benefit-element {
     text-align: center;
     display: flex;
@@ -216,12 +300,13 @@ header {
     content: counter(rando);
     border-radius: 50%;
     border: solid 1px #584D62;
-    width: 5rem;
-    height: 5rem;
+    width: 3rem;
+    height: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 1rem;
+    font-size: 1.25rem;
 }
 
 .benefit-element:first-child {

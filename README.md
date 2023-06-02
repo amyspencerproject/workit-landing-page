@@ -70,6 +70,8 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - [Stack Overflow-Curved Bottom](https://stackoverflow.com/questions/17040709/can-i-create-a-div-with-a-curved-bottom) - This was a good discussion on different ways to get curved bottoms on elements.
 - [CSS Counter()](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_counter_styles/Using_CSS_counters#list_item_counters) - CSS allows for a good deal of control over counting for lists.
 - [Pseudo-elements](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements) vs [Pseudo-classes](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes)
+- [Responsive Curved Header](https://codepen.io/soi/pen/OJXarwz) - Codepen example of a curved header!
+- [Non-rectangular Headers](https://css-tricks.com/creating-non-rectangular-headers/)
 
 
 ## Author
