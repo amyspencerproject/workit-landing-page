@@ -136,7 +136,7 @@ header {
     padding: 3rem 2rem;
     width: 100%;
     z-index: 2;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 
     &::before {
         content: '';
@@ -147,7 +147,6 @@ header {
         bottom: 0;
         transform: translateX(-50%);
         border-radius: 150vw;
-        /* width: 150%; */
         width: 300vw;
         height: 300vw;
         z-index: -1;
@@ -162,7 +161,7 @@ header {
     padding: 3rem 2rem;
     width: 100%;
     z-index: 2;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 
     &::before {
         content: '';
@@ -217,8 +216,12 @@ header {
 }
 
 .header-title {
-    grid-column: 2 / -2;
+    grid-column: 1 / -1;
     justify-self: center;
+}
+
+.break {
+    display: block;
 }
 
 .underline {
@@ -228,7 +231,7 @@ header {
 .learn {
     grid-column: 3 / 7;
     padding: 1rem;
-    margin: 1rem 0 3rem 0;
+    margin: 2rem 0 7rem 0;
 }
 
 .hero-section {
@@ -241,6 +244,11 @@ header {
     z-index: -1;
 }
 
+.bg-pattern-left,
+.bg-pattern-right {
+    visibility: hidden;
+}
+
 .curve-grid {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
@@ -248,26 +256,18 @@ header {
     justify-self: center;
 }
 
-
-
 .hero-image {
     grid-column: 2 / -2;
-    position: absolute;
-    left: 50%;
-    right: 50%;
-    transform: translate(-50%, -50%);
-    bottom: -60%;
-    z-index: 3;
+    margin-top: -5.5rem;
+    margin-bottom: -5rem;
+    z-index: 5;
 }
 
-
-/* .hero::after {
-    content: url("./assets/images/image-hero.webp");
-    position: relative;
-    top: 0;
-    bottom: 0;
-    grid-column: 2 / -2;
-} */
+.hero-image-wrapper {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    background-color: #FCF8FF;
+}
 
 /* ========================= Main ========================= */
 .benefits-list {
@@ -280,8 +280,6 @@ header {
     justify-content: center;
     flex-flow: column wrap;
 }
-
-
 
 .benfits-wrapper {
     background-color: black;
@@ -328,6 +326,10 @@ header {
     padding: 1rem;
 }
 
+.bg-pattern-bottom {
+    visibility: hidden;
+}
+
 /* ========================= Footer ========================= */
 
 .footer-wrapper {
@@ -349,4 +351,16 @@ header {
     justify-content: space-evenly;
     padding: 1rem;
     width: 100%;
+}
+
+@media (min-width: 640px) {
+
+    .bg-pattern-left,
+    .bg-pattern-right {
+        visibility: visible;
+    }
+
+    .bg-pattern-bottom {
+        visibility: visible;
+    }
 }
