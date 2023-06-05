@@ -64,6 +64,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Pseudo-element (double colons `::`)is a keyword added to a selector that lets you style a specific part of the selected element(s). For example, `::before` is the first child of the selected element. It is often used to add cosmetic content to an element with the content property.
 - Pseudo-class (single colon `:`) is a keyword added to a selector that specifies a special state of the selected element(s). For example, `:hover` can be used to select a button when a user's pointer hovers over the button and this selected button can then be styled.
 - Stuggled with the mobile phone image and the z-indexing. Learned that the z-index of a child is trapped by the z-index of the parent. Pulled the image out of the hero section and gave it a hero-image-wrapper to get the layout correct while also being able to set the z-index to put the image above the other divs.
+- Used `<span>` with `display: block` in the `h1` header title to force a line break with out using `<br />`
 
 
 ### Useful resources
@@ -74,7 +75,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - [Responsive Curved Header](https://codepen.io/soi/pen/OJXarwz) - Codepen example of a curved header!
 - [Non-rectangular Headers](https://css-tricks.com/creating-non-rectangular-headers/)
 - [4 reasons Z-index isn't working](https://coder-coder.com/z-index-isnt-working/) - very clear article on reasons why the z-index mysteriously isn't working.
-
+- [Linebreak w/o the `<br />` tag](https://www.geeksforgeeks.org/how-to-break-line-without-using-br-tag-in-html-css/) - clever way to avoid `<br />` with a `<span>'
 
 ## Author
 

@@ -279,6 +279,8 @@ header {
     display: flex;
     justify-content: center;
     flex-flow: column wrap;
+    padding-inline-start: 0;
+    margin-top: 5rem;
 }
 
 .benfits-wrapper {
@@ -291,6 +293,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 3rem;
 }
 
 .benefit-element::before {
@@ -309,6 +312,14 @@ header {
 
 .benefit-element:first-child {
     counter-reset: rando;
+}
+
+.benefits-header {
+    margin: 1.5rem 0;
+}
+
+.benefits-text {
+    margin: 0 -0.75rem;
 }
 
 .founder-avatar {
@@ -353,6 +364,9 @@ header {
     width: 100%;
 }
 
+
+/* ========================= Media Queries ========================= */
+
 @media (min-width: 640px) {
 
     .bg-pattern-left,
@@ -362,5 +376,64 @@ header {
 
     .bg-pattern-bottom {
         visibility: visible;
+    }
+
+    .nav-wrapper {
+        margin: 2rem 3rem 3rem 3rem;
+    }
+
+    .learn {
+        grid-column: 4 / 6;
+    }
+
+    .header-title {
+        font-size: 3rem;
+    }
+
+    .benefit-element {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .benefits-header,
+    .benefits-text {
+        margin: 0;
+    }
+
+    .element-container {
+        margin-left: 3rem;
+    }
+
+    .benefits-header {
+        margin-bottom: 1rem;
+    }
+
+    .benefits-list {
+        width: 80%;
+    }
+
+    .curve-light {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1024px) {
+    .learn {
+        /* width: 80%; */
+    }
+
+    .curve-light {
+        display: block;
+    }
+
+    .benefits-list {
+        width: auto;
+        flex-flow: row nowrap;
+    }
+
+    .benefit-element {
+        flex-direction: column;
+        text-align: center;
     }
 }
