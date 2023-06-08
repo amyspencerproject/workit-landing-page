@@ -374,6 +374,19 @@ header {
         visibility: visible;
     }
 
+    .bg-pattern-left {
+        z-index: 1;
+        position: absolute;
+        left: -30%;
+    }
+
+    .bg-pattern-right {
+        z-index: 1;
+        position: absolute;
+        left: 90%;
+        top: 30%;
+    }
+
     .bg-pattern-bottom {
         visibility: visible;
     }
@@ -425,6 +438,7 @@ header {
 
     .curve-light {
         display: block;
+        padding: 10rem 7rem;
     }
 
     .benefits-list {
