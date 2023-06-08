@@ -322,19 +322,54 @@ header {
     margin: 0 -0.75rem;
 }
 
+.action {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    margin-bottom: 3rem;
+    margin-top: 20rem;
+    position: relative;
+    z-index: -1;
+}
+
 .founder-avatar {
-    vertical-align: center;
-    width: 5rem;
-    height: 5rem;
+    grid-column: 2 / 8;
+    position: absolute;
+    top: -50%;
+    z-index: 1;
 }
 
 .action-callout {
     background-color: #24053E;
     color: #FFFFFF;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column: 1 / -1;
+    grid-template-rows: auto, 1fr;
+    justify-items: center;
+    margin: 1rem;
+    z-index: 2;
+}
+
+.action-header {
+    font-size: 2rem;
+    grid-column: 1 /-1;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.action-text {
+    grid-column: 1 /-1;
+    margin: 1rem 2rem;
+    text-align: center;
 }
 
 .action-apply {
     padding: 1rem;
+    grid-column: 2 / 4;
+    margin: 1rem 0 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .bg-pattern-bottom {
@@ -355,13 +390,18 @@ header {
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-bottom: 2rem;
 }
 
 .social-icons {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     padding: 1rem;
     width: 100%;
+}
+
+.icons {
+    padding: 0 1rem;
 }
 
 
