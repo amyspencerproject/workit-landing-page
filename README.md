@@ -65,6 +65,11 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Pseudo-class (single colon `:`) is a keyword added to a selector that specifies a special state of the selected element(s). For example, `:hover` can be used to select a button when a user's pointer hovers over the button and this selected button can then be styled.
 - Stuggled with the mobile phone image and the z-indexing. Learned that the z-index of a child is trapped by the z-index of the parent. Pulled the image out of the hero section and gave it a hero-image-wrapper to get the layout correct while also being able to set the z-index to put the image above the other divs.
 - Used `<span>` with `display: block` in the `h1` header title to force a line break with out using `<br />`
+- Using negative values with positioning does not work well. The left spiral pattern in the header was set to -35% and it kept dissapearing as the screen size was increased. Here is the explaination that I got from FEM Discord:
+
+  Giving it a left: -35% is basically telling it to be anchored 35% of the viewport (the parent is 100% of the viewport), but in the opposite direction. As the viewport grows, that value grows, moving it further and further from the left edge. If you want it to stick to the same place relative to the viewport, try using pixels or rems instead of a % value. 
+
+If you want it to be somewhat responsive, like the one on the right side, try something like right: 80% instead.
 
 
 ### Useful resources

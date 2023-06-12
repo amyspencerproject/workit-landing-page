@@ -435,7 +435,7 @@ header {
     .bg-pattern-left {
         z-index: 1;
         position: absolute;
-        left: -35%;
+        right: 80%;
         top: 15%;
     }
 
