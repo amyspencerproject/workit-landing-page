@@ -259,15 +259,15 @@ header {
 .hero-image {
     grid-column: 2 / -2;
     margin-top: -5.5rem;
-    margin-bottom: -5rem;
-    z-index: 5;
+    /* margin-bottom: -5rem; */
+    z-index: 3;
 }
 
-.hero-image-wrapper {
+/* .hero-image-wrapper {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     background-color: #FCF8FF;
-}
+} */
 
 /* ========================= Main ========================= */
 .benefits-list {
@@ -491,8 +491,13 @@ header {
 }
 
 @media (min-width: 1024px) {
+
+    .header-title {
+        font-size: 5rem;
+    }
+
     .learn {
-        /* width: 80%; */
+        margin-bottom: 15rem;
     }
 
     .curve-light {
