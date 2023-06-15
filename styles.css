@@ -408,6 +408,10 @@ main {
     padding: 0 1rem;
 }
 
+.social-icon-fill:hover path {
+    fill: #24053E;
+}
+
 
 /* ========================= Media Queries ========================= */
 
