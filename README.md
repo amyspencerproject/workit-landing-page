@@ -69,8 +69,11 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
   Giving it a left: -35% is basically telling it to be anchored 35% of the viewport (the parent is 100% of the viewport), but in the opposite direction. As the viewport grows, that value grows, moving it further and further from the left edge. If you want it to stick to the same place relative to the viewport, try using pixels or rems instead of a % value. 
 
-If you want it to be somewhat responsive, like the one on the right side, try something like right: 80% instead.
+  If you want it to be somewhat responsive, like the one on the right side, try something like right: 80% instead.
 
+- Careful when setting a z-index value for larger container element such as `<main>`. I set `<main>` to `z-index: -1`. A mouse hover will not register since the mouse can "see" anything in the negative. I chased this issue for more than an hour before realizing that I had set `<main>` to `z-index: -1` while wrestling with the mobile phone positioning. It was just fine to set `<main>` to `z-index: 1` and then just adjust all the other elements to one z-level higher.
+
+- Used proper `<svg>` elements for the social icons instead of linking the files as images. Doing this allowed for an active hover state for the icons. This was a first for me. 
 
 ### Useful resources
 
@@ -81,6 +84,7 @@ If you want it to be somewhat responsive, like the one on the right side, try so
 - [Non-rectangular Headers](https://css-tricks.com/creating-non-rectangular-headers/)
 - [4 reasons Z-index isn't working](https://coder-coder.com/z-index-isnt-working/) - very clear article on reasons why the z-index mysteriously isn't working.
 - [Linebreak w/o the `<br />` tag](https://www.geeksforgeeks.org/how-to-break-line-without-using-br-tag-in-html-css/) - clever way to avoid `<br />` with a `<span>'
+- [Hover fill change to SVGs](https://stackoverflow.com/questions/19157122/css-change-fill-color-on-hover-svg-path) - pretty straight forward
 
 ## Author
 

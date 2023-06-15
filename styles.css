@@ -241,7 +241,7 @@ header {
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(auto-fill, minmax(150px, 1fr));
     position: relative;
-    z-index: 1;
+    z-index: 2;
 }
 
 .bg-pattern-left,
@@ -266,7 +266,7 @@ header {
 /* ========================= Main ========================= */
 main {
     position: relative;
-    z-index: -1;
+    z-index: 1;
     margin-top: -10rem;
 }
 
