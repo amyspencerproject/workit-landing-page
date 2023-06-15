@@ -339,7 +339,6 @@ main {
     grid-column: 1 / -1;
     grid-row: 5 / span 5;
     justify-items: center;
-    /* margin: 1rem; */
     z-index: 2;
 }
 
@@ -364,6 +363,18 @@ main {
     flex-direction: column;
     justify-content: center;
 }
+
+/* .testing {
+    background-color: #44FFA1;
+    color: #24053E;
+    text-align: center;
+}
+
+.testing:hover {
+    background-color: #24053E;
+    color: #44FFA1;
+    border: solid 0.25rem #44FFA1;
+} */
 
 .bg-pattern-bottom {
     visibility: hidden;
@@ -484,6 +495,7 @@ main {
         grid-row: 2 / 6;
         margin-inline: auto;
         margin-bottom: 2rem;
+        z-index: 1;
     }
 
     .action-callout {
@@ -541,12 +553,13 @@ main {
 
     .curve-light {
         display: block;
-        padding: 10rem 7rem;
+        padding: 10rem 5rem;
     }
 
     .benefits-list {
         width: auto;
         flex-flow: row nowrap;
+
     }
 
     .benefit-element {
@@ -555,7 +568,25 @@ main {
     }
 
     .hero-image {
-
         margin-top: -13.5rem;
+    }
+
+    .element-container {
+        margin: 3rem 1.25rem;
+    }
+
+    .founder-avatar {
+        margin-left: 2.50rem;
+    }
+
+    .action-callout {
+        grid-column: 3 / -1;
+        grid-row: 3 / span 6;
+        margin: 2rem 2rem 0 5rem;
+    }
+
+    .bg-pattern-bottom {
+        left: 68%;
+        bottom: -4%;
     }
 }
