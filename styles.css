@@ -101,7 +101,7 @@ h3 {
 
 p {
     font-family: 'Manrope', sans-serif;
-    font-size: 1.25;
+    font-size: 1rem;
     line-height: 1.75;
 }
 
@@ -489,6 +489,78 @@ header {
         margin: 5rem 0;
     }
 }
-}
 
-@media (min-width: 1024px) {}
+
+@media (min-width: 1024px) {
+    .header-title {
+        font-size: 5rem;
+        grid-column: 2 / -2;
+    }
+
+    .nav-wrapper {
+        grid-column: 2 / -2;
+        margin-top: 3rem;
+    }
+
+    .bg-pattern-right {
+        left: 91%;
+    }
+
+    .learn {
+        margin-bottom: 15rem;
+        margin-right: 2rem;
+        margin-left: 2rem;
+        padding: 1.5rem 3.5rem;
+    }
+
+
+    .benefits-list {
+        width: auto;
+        flex-flow: row nowrap;
+        padding-top: 18rem;
+        margin-inline: 12rem;
+    }
+
+    .benefit-element {
+        flex-direction: column;
+        text-align: center;
+        margin-inline: 0;
+    }
+
+    .hero-image {
+        margin-top: -11.5rem;
+        top: 100%;
+        max-width: 50%;
+    }
+
+    .element-container {
+        margin: 3rem 1.25rem;
+    }
+
+    .founder-avatar {
+        margin-left: 2.50rem;
+    }
+
+    .action-callout {
+        grid-column: 3 / -1;
+        grid-row: 3 / 7;
+        margin: 3rem 5rem 0 6.5rem;
+    }
+
+    .action-header {
+        font-size: 3rem;
+    }
+
+    .action-text {
+        font-size: 1.25rem;
+    }
+
+    .action-apply {
+        padding: 1rem 3rem;
+    }
+
+    .bg-pattern-bottom {
+        left: 72%;
+        bottom: -8%;
+    }
+}
