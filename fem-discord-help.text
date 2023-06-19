@@ -1,3 +1,20 @@
+.hero__image {
+    width: var(--phone-image-width);
+    height: auto;
+    z-index: 100;
+    margin: 0 auto;
+    position: absolute;
+    top: 85%;
+    left: 0;
+    right: 0;
+}
+
+--phone-image-width: 20rem;
+    height: calc(var(--hero-section-height) - var(--delta-height));
+    text-align: center;
+
+
+
 .action {
     /* display: flex; */
     /* justify-content: center; */
